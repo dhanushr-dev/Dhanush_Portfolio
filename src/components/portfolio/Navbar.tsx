@@ -98,7 +98,13 @@ export function Navbar() {
           })}
         </ul>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-4">
+          <a
+            href="#contact"
+            className="hidden sm:inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-primary to-primary-glow px-4 py-2 text-xs font-semibold text-primary-foreground shadow-glow-sm transition-transform hover:scale-105"
+          >
+            Hire Me
+          </a>
           <ThemeToggle />
           <button
             onClick={() => setOpen(!open)}
@@ -137,6 +143,15 @@ export function Navbar() {
                   </li>
                 );
               })}
+              <li className="mt-3 px-3">
+                <a
+                  href="#contact"
+                  onClick={() => setOpen(false)}
+                  className="flex w-full items-center justify-center rounded-lg bg-gradient-to-r from-primary to-primary-glow py-2 text-sm font-semibold text-primary-foreground shadow-glow"
+                >
+                  Hire Me
+                </a>
+              </li>
             </ul>
           </motion.div>
         )}
