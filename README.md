@@ -8,7 +8,7 @@
 
 Welcome to the source code of my personal developer portfolio. This web application is a sleek, modern, and highly interactive showcase of my journey as a Software Engineer, my technical skills, and the key projects I have built.
 
-🔗 **Live Demo:** [dhanushr.dev](https://github.com/dhanushr-dev/Dhanush_Portfolio) *(Link to your live site once deployed)*
+🔗 **Live Demo:** [dhanushr.dev](https://dhanushr-portfolio1.netlify.app/)
 
 ---
 
