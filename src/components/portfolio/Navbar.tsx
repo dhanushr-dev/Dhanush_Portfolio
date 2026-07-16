@@ -7,12 +7,14 @@ const links = [
   { href: "#home", label: "Home", id: "home" },
   { href: "#about", label: "About", id: "about" },
   { href: "#skills", label: "Skills", id: "skills" },
+  { href: "#beyond-code", label: "Beyond Code", id: "beyond-code" },
   { href: "#projects", label: "Projects", id: "projects" },
   { href: "#experience", label: "Experience", id: "experience" },
   { href: "#achievements", label: "Achievements", id: "achievements" },
   { href: "#certifications", label: "Certifications", id: "certifications" },
   { href: "#contact", label: "Contact", id: "contact" },
 ];
+
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
