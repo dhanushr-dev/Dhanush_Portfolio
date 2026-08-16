@@ -8,7 +8,7 @@ import {
 } from "react-icons/si";
 const SiCss3 = SiCss;
 import { FaJava, FaDatabase } from "react-icons/fa";
-import { Code, Server, Wrench, Sparkles, MousePointer2, Rocket, GraduationCap, Plug, Layout } from "lucide-react";
+import { Code, Server, Wrench, Sparkles, MousePointer2, Rocket, GraduationCap, Plug, Layout, FileCode } from "lucide-react";
 
 type Chip = { label: string; Icon: React.ElementType; color: string };
 type Group = { title: string; icon: React.ElementType; items: Chip[] };
@@ -19,6 +19,7 @@ const currentStack: Group[] = [
     icon: Code,
     items: [
       { label: "Java", Icon: FaJava, color: "#f89820" },
+      { label: "JavaScript", Icon: SiJavascript, color: "#f7df1e" },
       { label: "SQL", Icon: FaDatabase, color: "#00C8FF" },
     ],
   },
@@ -28,6 +29,8 @@ const currentStack: Group[] = [
     items: [
       { label: "HTML5", Icon: SiHtml5, color: "#e34f26" },
       { label: "CSS3", Icon: SiCss3, color: "#1572b6" },
+      { label: "JavaScript", Icon: SiJavascript, color: "#f7df1e" },
+      { label: "JSP", Icon: FileCode, color: "#f89820" },
     ],
   },
   {
@@ -35,6 +38,7 @@ const currentStack: Group[] = [
     icon: Server,
     items: [
       { label: "Core Java", Icon: FaJava, color: "#f89820" },
+      { label: "JEE", Icon: FaJava, color: "#f89820" },
       { label: "JDBC", Icon: Plug, color: "#00C8FF" },
       { label: "MySQL", Icon: SiMysql, color: "#4479a1" },
     ],
@@ -54,7 +58,6 @@ const learning: Chip[] = [
   { label: "Spring Boot", Icon: SiSpringboot, color: "#6db33f" },
   { label: "Spring Security", Icon: SiSpringsecurity, color: "#6db33f" },
   { label: "React", Icon: SiReact, color: "#61dafb" },
-  { label: "JavaScript", Icon: SiJavascript, color: "#f7df1e" },
   { label: "Docker", Icon: SiDocker, color: "#2496ed" },
   { label: "PostgreSQL", Icon: SiPostgresql, color: "#4169e1" },
   { label: "Maven", Icon: SiApachemaven, color: "#c71a36" },
