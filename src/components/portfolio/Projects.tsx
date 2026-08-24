@@ -4,6 +4,7 @@ import { Section } from "./Section";
 import shopeaseAsset from "@/assets/shopease-preview.png.asset.json";
 import airsenseAsset from "@/assets/airsense-preview.png.asset.json";
 import ecommerceCliPreview from "@/assets/ecommerce-cli-preview.png";
+import foodHubPreview from "@/assets/food-hub-preview.png";
 
 type Project = {
   title: string;
@@ -17,6 +18,17 @@ type Project = {
 };
 
 const projects: Project[] = [
+  {
+    title: "Food Hub",
+    tag: "Food Delivery Platform",
+    image: foodHubPreview,
+    description:
+      "A food delivery platform where users can explore thousands of fresh dishes from top chefs and local favorites.",
+    stack: ["React", "JavaScript", "HTML", "CSS"],
+    github: "https://github.com/dhanushr-dev/Food-Hub",
+    demo: "https://food-hub-foys.onrender.com/",
+    gradient: "from-orange-500/30 to-red-500/10",
+  },
   {
     title: "ShopEase",
     tag: "E-Commerce Platform",
