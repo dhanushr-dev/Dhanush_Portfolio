@@ -4,6 +4,17 @@ import { Section } from "./Section";
 
 const items = [
   {
+    icon: Briefcase,
+    role: "Full Stack Java Development Training",
+    org: "Tap Academy, Bangalore",
+    period: "2026",
+    points: [
+      "Completed intensive training in Java, Spring Boot, React.js, REST APIs, MySQL",
+      "Built real-world projects including a full-stack e-commerce platform",
+      "Covered OOP, DSA basics, Hibernate, Spring Security, Git/GitHub",
+    ],
+  },
+  {
     icon: GraduationCap,
     role: "BE Computer Science Engineering",
     org: "G Madegowda Institute of Technology",
@@ -14,14 +25,22 @@ const items = [
     ],
   },
   {
-    icon: Briefcase,
-    role: "Full Stack Java Development Training",
-    org: "Tap Academy, Bangalore",
-    period: "2026",
+    icon: GraduationCap,
+    role: "12th / PUC (PCMB)",
+    org: "Mandavya Integration PU College, Mandya, Karnataka",
+    period: "2020 — 2022",
     points: [
-      "Completed intensive training in Java, Spring Boot, React.js, REST APIs, MySQL",
-      "Built real-world projects including a full-stack e-commerce platform",
-      "Covered OOP, DSA basics, Hibernate, Spring Security, Git/GitHub",
+      "Course: Pre-University (PCMB)",
+      "Percentage: 77%",
+    ],
+  },
+  {
+    icon: GraduationCap,
+    role: "10th / SSLC",
+    org: "Vimala English Medium High School, Mandya, Karnataka",
+    period: "2020",
+    points: [
+      "Percentage: 84.16%",
     ],
   },
 ];
