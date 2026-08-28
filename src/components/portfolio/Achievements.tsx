@@ -6,12 +6,12 @@ const items = [
   {
     icon: Trophy,
     title: "Cleared TCS NQT",
-    desc: "Shortlisted for TCS Digital Cadre (2026).",
+    desc: "Successfully cleared the TCS National Qualifier Test (NQT) and was shortlisted for the TCS Digital Cadre – 2026.",
   },
   {
     icon: Code2,
-    title: "Hackathons",
-    desc: "Participated in multiple hackathons, collaborating with teams to prototype ideas under tight deadlines.",
+    title: "Hackathon Participation",
+    desc: "Participated in technical hackathons, collaborating with team members to develop and present solutions within limited timeframes.",
   },
 ];
 
@@ -19,8 +19,8 @@ export function Achievements() {
   return (
     <Section
       id="achievements"
-      eyebrow="Achievements"
-      title={<>Wins worth <span className="gradient-text">celebrating</span></>}
+      eyebrow="Achievements & Highlights"
+      title={<>My <span className="gradient-text">achievements & milestones</span></>}
     >
       <div className="grid gap-6 md:grid-cols-2">
         {items.map((it, i) => (

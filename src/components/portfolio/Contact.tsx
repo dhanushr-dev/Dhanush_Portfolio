@@ -130,7 +130,7 @@ export function Contact() {
               </div>
               <div>
                 <div className="text-xs uppercase tracking-wider text-muted-foreground">Location</div>
-                <div className="font-medium">Bangalore, India</div>
+                <div className="font-medium">Mandya, Karnataka, India</div>
               </div>
             </div>
           </div>

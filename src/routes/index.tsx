@@ -20,26 +20,26 @@ const OG_IMAGE = `${SITE_URL}/og-image.jpg`;
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Dhanush R — Full Stack Java Developer" },
+      { title: "Dhanush R — Aspiring Java Full Stack Developer" },
       {
         name: "description",
         content:
-          "Portfolio of Dhanush R — Full Stack Java Developer specializing in Spring Boot and React. BE CSE 2026, TCS NQT cleared, based in Bangalore.",
+          "Portfolio of Dhanush R — Aspiring Java Full Stack Developer with skills in Core Java, JEE, JDBC, JSP, MySQL, HTML, CSS, JavaScript. BE CSE 2026 graduate.",
       },
-      { property: "og:title", content: "Dhanush R — Full Stack Java Developer" },
+      { property: "og:title", content: "Dhanush R — Aspiring Java Full Stack Developer" },
       {
         property: "og:description",
         content:
-          "Spring Boot + React developer building scalable web applications. Open to full-time roles.",
+          "Aspiring Java Full Stack Developer building web applications. Open to full-time roles.",
       },
       { property: "og:url", content: SITE_URL },
       { property: "og:image", content: OG_IMAGE },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:title", content: "Dhanush R — Full Stack Java Developer" },
+      { name: "twitter:title", content: "Dhanush R — Aspiring Java Full Stack Developer" },
       {
         name: "twitter:description",
-        content: "Spring Boot + React developer building scalable web applications.",
+        content: "Aspiring Java Full Stack Developer building web applications.",
       },
       { name: "twitter:image", content: OG_IMAGE },
     ],
@@ -68,11 +68,11 @@ function Index() {
         <Hero />
         <About />
         <Skills />
-        <BeyondCode />
         <Projects />
         <Experience />
         <Achievements />
         <Certifications />
+        <BeyondCode />
         <Contact />
       </main>
 

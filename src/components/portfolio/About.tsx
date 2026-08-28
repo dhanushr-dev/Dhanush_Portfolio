@@ -6,7 +6,7 @@ import dhanushAsset from "@/assets/dhanush.jpeg.asset.json";
 
 const stats = [
   { icon: Award, label: "CGPA", value: "8.0" },
-  { icon: Code2, label: "Major Projects", value: "2" },
+  { icon: Code2, label: "Projects", value: "4" },
 ];
 
 function TiltPhoto() {
@@ -100,14 +100,23 @@ export function About() {
             transition={{ duration: 0.6 }}
             className="text-lg leading-relaxed text-muted-foreground"
           >
-            I'm a passionate <span className="text-foreground">Full Stack Java Developer</span> from
-            Bangalore, currently completing my BE in Computer Science at
-            <span className="text-foreground"> G Madegowda Institute of Technology (2026)</span>.
-            I've trained at <span className="text-foreground">Tap Academy</span> building real-world
-            applications using Java, Spring Boot, and React. I love turning ideas into
-            <span className="text-foreground"> clean, scalable products</span> and I'm actively
-            looking for my first IT role where I can contribute, learn fast, and grow with a
-            strong engineering team.
+            I'm a passionate and aspiring <span className="text-foreground">Java Full Stack Developer</span> from
+            Mandya and a 2026 Computer Science Engineering graduate from
+            <span className="text-foreground"> G Madegowda Institute of Technology</span>.
+            I have built a strong foundation in <span className="text-foreground">Core Java, OOP, JEE, JDBC, JSP, MySQL, SQL, HTML, CSS, and JavaScript</span> through
+            my academic projects and Full Stack Java training at <span className="text-foreground">Tap Academy</span>.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="mt-4 text-lg leading-relaxed text-muted-foreground"
+          >
+            I enjoy building practical web applications, working with databases, and solving programming problems.
+            I'm actively looking for my first IT opportunity as a <span className="text-foreground">Java Developer or Java Full Stack Developer</span>,
+            where I can apply my skills, learn new technologies, contribute to the team, and grow as a software professional.
           </motion.p>
 
           <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">

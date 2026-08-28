@@ -192,7 +192,7 @@ export function CodeTerminal() {
         {/* Status bar */}
         <div className="flex items-center justify-between border-t border-white/5 bg-primary/[0.06] px-4 py-1 text-[10px] uppercase tracking-widest text-primary/80">
           <div className="flex gap-3">
-            <span>Java 17</span>
+            <span>Java 21</span>
             <span>UTF-8</span>
           </div>
           <div className="flex items-center gap-2">

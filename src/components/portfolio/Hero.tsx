@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Download, FileText } from "lucide-react";
-import { generateOnePager } from "@/lib/generateOnePager";
+import { ArrowRight, Download } from "lucide-react";
 import resumeAsset from "@/assets/Dhanush_Resume.pdf.asset.json";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiHackerrank } from "react-icons/si";
@@ -10,7 +9,6 @@ import { CodeTerminal } from "./CodeTerminal";
 const roles = [
   "Full Stack Java Developer",
   "Spring Boot Enthusiast",
-  "React Developer",
   "Problem Solver",
 ];
 
@@ -106,7 +104,10 @@ export function Hero() {
             </div>
 
             <p className="mt-6 max-w-xl text-base text-muted-foreground sm:text-lg">
-              Fresher · BE CSE 2026 · Building scalable web applications with Java, Spring Boot & React.
+              Fresher · 2026 Graduate · BE CSE · Aspiring Java Full Stack Developer
+            </p>
+            <p className="mt-2 max-w-xl text-base text-muted-foreground sm:text-lg">
+              Building web applications using Core Java, JEE, JDBC, JSP, MySQL, HTML, CSS and JavaScript.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center gap-4">
@@ -125,13 +126,6 @@ export function Hero() {
                 <Download size={18} />
                 Download Resume
               </a>
-              <button
-                onClick={generateOnePager}
-                className="inline-flex items-center gap-2 rounded-lg border border-border bg-surface/50 px-6 py-3 font-medium text-foreground backdrop-blur transition-all hover:border-primary hover:text-primary"
-              >
-                <FileText size={18} />
-                One-Pager PDF
-              </button>
             </div>
 
             <div className="mt-10 flex items-center gap-3">

@@ -9,9 +9,10 @@ const items = [
     org: "Tap Academy, Bangalore",
     period: "2026",
     points: [
-      "Completed intensive training in Java, Spring Boot, React.js, REST APIs, MySQL",
-      "Built real-world projects including a full-stack e-commerce platform",
-      "Covered OOP, DSA basics, Hibernate, Spring Security, Git/GitHub",
+      "Completed training in Core Java, OOP, JEE, JDBC, JSP, MySQL, SQL, HTML, CSS, and JavaScript.",
+      "Developed practical web applications using Java, JSP, JDBC, MySQL, HTML, CSS, and JavaScript.",
+      "Strengthened skills in object-oriented programming, database connectivity, CRUD operations, and web application development.",
+      "Built projects including a Java-based online food ordering application and e-commerce application.",
     ],
   },
   {

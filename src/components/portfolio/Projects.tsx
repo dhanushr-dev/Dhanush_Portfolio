@@ -19,17 +19,6 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Food Hub",
-    tag: "Food Delivery Platform",
-    image: foodHubPreview,
-    description:
-      "A food delivery platform where users can explore thousands of fresh dishes from top chefs and local favorites.",
-    stack: ["React", "JavaScript", "HTML", "CSS"],
-    github: "https://github.com/dhanushr-dev/Food-Hub",
-    demo: "https://food-hub-foys.onrender.com/",
-    gradient: "from-orange-500/30 to-red-500/10",
-  },
-  {
     title: "ShopEase",
     tag: "E-Commerce Platform",
     image: shopeaseAsset.url,
@@ -41,12 +30,23 @@ const projects: Project[] = [
     gradient: "from-cyan-500/30 to-blue-500/10",
   },
   {
+    title: "FoodHub — Online Food Ordering System",
+    tag: "Java Web Application",
+    image: foodHubPreview,
+    description:
+      "A Java-based online food ordering web application that allows users to browse food items, manage their cart, place orders, and manage their account. The application uses JSP and JEE for the web layer, JDBC for database connectivity, and MySQL for storing and managing application data.",
+    stack: ["Core Java", "JEE", "JSP", "JDBC", "MySQL", "HTML", "CSS", "JavaScript"],
+    github: "https://github.com/dhanushr-dev/Food-Hub",
+    demo: "https://food-hub-foys.onrender.com/",
+    gradient: "from-orange-500/30 to-red-500/10",
+  },
+  {
     title: "AirSense Pro",
     tag: "Air Quality Lab Project",
     image: airsenseAsset.url,
     description:
       "A real-time Air Quality Index dashboard for different locations with weather conditions, particulate matter tracking, interactive map, and AI health recommendations.",
-    stack: ["Java", "HTML", "CSS", "MySQL"],
+    stack: ["React", "TypeScript", "Vite", "Leaflet", "Gemini AI", "OpenWeatherMap API", "PWA", "Capacitor"],
     github: "https://github.com/dhanushr-dev/airsense-pro",
     demo: "https://airsensepro.netlify.app/",
     gradient: "from-emerald-500/30 to-teal-500/10",

@@ -2,25 +2,32 @@ import { motion } from "framer-motion";
 import { Section } from "./Section";
 import {
   SiSpringboot, SiReact, SiJavascript, SiHtml5, SiCss,
-  SiMysql, SiGit, SiGithub, SiPostman, SiApachemaven,
-  SiDocker, SiPostgresql, SiEclipseide, SiSpringsecurity,
-  SiGoogle, SiAnthropic,
+  SiMysql, SiGit, SiGithub, SiApachemaven,
+  SiEclipseide, SiSpringsecurity,
 } from "react-icons/si";
 const SiCss3 = SiCss;
 import { FaJava, FaDatabase } from "react-icons/fa";
-import { Code, Server, Wrench, Sparkles, MousePointer2, Rocket, GraduationCap, Plug, Layout, FileCode } from "lucide-react";
+import { Code, Server, Wrench, GraduationCap, Plug, Layout, FileCode, Database, MonitorSmartphone } from "lucide-react";
 
 type Chip = { label: string; Icon: React.ElementType; color: string };
 type Group = { title: string; icon: React.ElementType; items: Chip[] };
 
 const currentStack: Group[] = [
   {
-    title: "Languages",
+    title: "Programming",
     icon: Code,
     items: [
-      { label: "Java", Icon: FaJava, color: "#f89820" },
-      { label: "JavaScript", Icon: SiJavascript, color: "#f7df1e" },
+      { label: "Core Java", Icon: FaJava, color: "#f89820" },
       { label: "SQL", Icon: FaDatabase, color: "#00C8FF" },
+    ],
+  },
+  {
+    title: "Backend & Java Web",
+    icon: Server,
+    items: [
+      { label: "Java EE (JEE)", Icon: FaJava, color: "#f89820" },
+      { label: "JDBC", Icon: Plug, color: "#00C8FF" },
+      { label: "JSP", Icon: FileCode, color: "#f89820" },
     ],
   },
   {
@@ -30,46 +37,34 @@ const currentStack: Group[] = [
       { label: "HTML5", Icon: SiHtml5, color: "#e34f26" },
       { label: "CSS3", Icon: SiCss3, color: "#1572b6" },
       { label: "JavaScript", Icon: SiJavascript, color: "#f7df1e" },
-      { label: "JSP", Icon: FileCode, color: "#f89820" },
     ],
   },
   {
-    title: "Backend",
-    icon: Server,
+    title: "Database",
+    icon: Database,
     items: [
-      { label: "Core Java", Icon: FaJava, color: "#f89820" },
-      { label: "JEE", Icon: FaJava, color: "#f89820" },
-      { label: "JDBC", Icon: Plug, color: "#00C8FF" },
       { label: "MySQL", Icon: SiMysql, color: "#4479a1" },
     ],
   },
   {
-    title: "Tools",
+    title: "Development Tools",
     icon: Wrench,
     items: [
       { label: "Eclipse IDE", Icon: SiEclipseide, color: "#a855f7" },
       { label: "Git", Icon: SiGit, color: "#f05032" },
       { label: "GitHub", Icon: SiGithub, color: "#ffffff" },
+      { label: "VS Code", Icon: MonitorSmartphone, color: "#007ACC" },
     ],
   },
 ];
 
 const learning: Chip[] = [
   { label: "Spring Boot", Icon: SiSpringboot, color: "#6db33f" },
+  { label: "REST APIs", Icon: Server, color: "#61dafb" },
+  { label: "Hibernate/JPA", Icon: FaJava, color: "#59666C" },
   { label: "Spring Security", Icon: SiSpringsecurity, color: "#6db33f" },
-  { label: "React", Icon: SiReact, color: "#61dafb" },
-  { label: "Docker", Icon: SiDocker, color: "#2496ed" },
-  { label: "PostgreSQL", Icon: SiPostgresql, color: "#4169e1" },
+  { label: "React.js", Icon: SiReact, color: "#61dafb" },
   { label: "Maven", Icon: SiApachemaven, color: "#c71a36" },
-  { label: "Postman", Icon: SiPostman, color: "#ff6c37" },
-];
-
-const aiTools: Chip[] = [
-  { label: "Lovable", Icon: Rocket, color: "#ff5a8a" },
-  { label: "Claude", Icon: SiAnthropic, color: "#d97757" },
-  { label: "Google AI Studio", Icon: SiGoogle, color: "#4285f4" },
-  { label: "Cursor", Icon: MousePointer2, color: "#00C8FF" },
-  { label: "Antigravity", Icon: Sparkles, color: "#a855f7" },
 ];
 
 function ChipRow({ items }: { items: Chip[] }) {
@@ -102,9 +97,9 @@ export function Skills() {
   return (
     <Section
       id="skills"
-      eyebrow="Skills & Tech Stack"
+      eyebrow="Tech Stack"
       title={<>Tools I <span className="gradient-text">build with</span></>}
-      subtitle="What I use today, what I'm actively learning, and the AI tools in my workflow."
+      subtitle="My current technologies and learning path."
     >
       {/* Current Tech Stack */}
       <motion.div
@@ -148,33 +143,11 @@ export function Skills() {
           </div>
           <div>
             <h3 className="font-display text-xl font-semibold md:text-2xl">Currently Learning</h3>
-            <p className="text-sm text-foreground/60">Actively building side projects with these.</p>
+            <p className="text-sm text-foreground/60">Currently expanding my skills with these technologies.</p>
           </div>
         </div>
         <div className="mt-5">
           <ChipRow items={learning} />
-        </div>
-      </motion.div>
-
-      {/* AI Tools */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-50px" }}
-        transition={{ duration: 0.5, delay: 0.15 }}
-        className="mt-6 rounded-2xl border border-border bg-card p-6 md:p-8"
-      >
-        <div className="flex items-center gap-3">
-          <div className="grid h-10 w-10 place-items-center rounded-lg bg-primary/10 text-primary">
-            <Sparkles size={20} />
-          </div>
-          <div>
-            <h3 className="font-display text-xl font-semibold md:text-2xl">AI Tools</h3>
-            <p className="text-sm text-foreground/60">Part of my daily development workflow.</p>
-          </div>
-        </div>
-        <div className="mt-5">
-          <ChipRow items={aiTools} />
         </div>
       </motion.div>
     </Section>
