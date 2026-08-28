@@ -119,7 +119,7 @@ export function Hero() {
                 <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
               </a>
               <a
-                href={resumeAsset.url}
+                href="/Dhanush_Resume.pdf"
                 download="Dhanush_Resume.pdf"
                 className="inline-flex items-center gap-2 rounded-lg border border-border bg-surface/50 px-6 py-3 font-medium text-foreground backdrop-blur transition-all hover:border-primary hover:text-primary"
               >

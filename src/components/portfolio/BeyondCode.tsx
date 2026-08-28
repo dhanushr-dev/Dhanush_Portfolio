@@ -6,29 +6,24 @@ import { Users, Brain, Zap, Award, Target, Languages, Globe } from "lucide-react
 type LanguageProficiency = {
   language: string;
   proficiency: string;
-  percentage: number;
 };
 
 const languages: LanguageProficiency[] = [
   {
     language: "Kannada",
     proficiency: "Native",
-    percentage: 100,
   },
   {
     language: "English",
     proficiency: "Professional",
-    percentage: 95,
   },
   {
     language: "Tamil",
     proficiency: "Professional Working",
-    percentage: 85,
   },
   {
     language: "Hindi",
     proficiency: "Limited Working",
-    percentage: 60,
   },
 ];
 
@@ -86,30 +81,25 @@ export function BeyondCode() {
             <h3 className="font-display text-xl font-bold md:text-2xl">Languages</h3>
           </div>
 
-          <div className="rounded-2xl border border-border bg-card p-6 md:p-8 space-y-6">
-            <div className="space-y-6">
+          <div className="rounded-2xl border border-border bg-card p-6 md:p-8">
+            <div className="space-y-3">
               {languages.map((lang, i) => (
-                <div key={lang.language} className="space-y-2">
-                  <div className="flex justify-between items-end text-sm">
-                    <span className="font-semibold text-foreground flex items-center gap-2">
-                      <Globe size={14} className="text-primary/70" />
-                      {lang.language}
-                    </span>
-                    <span className="text-muted-foreground text-xs bg-surface px-2.5 py-0.5 rounded-full border border-border">
-                      {lang.proficiency}
-                    </span>
-                  </div>
-                  {/* Progress Bar Container */}
-                  <div className="h-2 w-full rounded-full bg-border overflow-hidden">
-                    <motion.div
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${lang.percentage}%` }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 1, delay: i * 0.15, ease: "easeOut" }}
-                      className="h-full bg-gradient-to-r from-primary to-primary-glow rounded-full"
-                    />
-                  </div>
-                </div>
+                <motion.div
+                  key={lang.language}
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: i * 0.08 }}
+                  className="flex justify-between items-center text-sm p-3.5 rounded-xl border border-border bg-surface/50"
+                >
+                  <span className="font-semibold text-foreground flex items-center gap-2">
+                    <Globe size={16} className="text-primary" />
+                    {lang.language}
+                  </span>
+                  <span className="text-xs font-medium bg-primary/10 text-primary px-3 py-1 rounded-full border border-primary/20">
+                    {lang.proficiency}
+                  </span>
+                </motion.div>
               ))}
             </div>
           </div>
